@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "chip": "esp32s3",
+  "board": "ESP32-S3 Dev Module",
+  "sketch": "examples/BellDemo/BellDemo.ino",
+  "wifi_ssid": "BellLab",
+  "components": [
+    {
+      "type": "Relay module",
+      "name": "Bell relay",
+      "gpio": "GPIO5",
+      "polarity": "Active LOW"
+    },
+    {
+      "type": "Push button",
+      "name": "Manual bell test",
+      "gpio": "GPIO4",
+      "polarity": "Active HIGH / normal"
+    },
+    {
+      "type": "LED",
+      "name": "Relay status LED",
+      "gpio": "GPIO2",
+      "polarity": "Active HIGH / normal"
+    }
+  ]
+}
